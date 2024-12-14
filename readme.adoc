@@ -1,0 +1,13 @@
+== Description
+
+[WARNING]
+====
+Since gitea does not support relative links for asciidoc files, I have used
+absolute links instead. This means that they will not work for mirrors.
+====
+
+This repository holds my system configuration files for each production system.
+
+== System
+
+* https://src.reticentadmin.com/aryan/etc-config/src/branch/main/system/kotori[kotori].

@@ -1,0 +1,30 @@
+# File Name: mimeapps.list
+# File Path: /etc/xdg/mimeapps.list
+# Description: System-wide mimeapps.list
+
+# Copyright (c) 2024 Aryan
+# SPDX-Licence-Identifier: BSD-3-Clause
+
+# Version: 1.0.0
+
+[Default Applications]
+application/xhtml+xml=browser.desktop
+text/html=browser.desktop
+x-scheme-handler/http=browser.desktop
+x-scheme-handler/https=browser.desktop
+
+image/gif=img.desktop
+image/jpeg=img.desktop
+image/png=img.desktop
+
+application/pdf=pdf.desktop
+application/postscript=pdf.desktop
+
+text/plain=text.desktop
+text/x-shellscript=text.desktop
+
+application/x-bittorrent=torrent.desktop
+x-scheme-handler/magnet=torrent.desktop
+
+video/mp4=video.desktop
+video/x-matroska=video.desktop

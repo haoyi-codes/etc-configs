@@ -1,0 +1,24 @@
+# File Name: llvm-tc
+# File Path: /etc/portage/sets/llvm-tc
+# Description: Portage set for easy recompilation of the entire LLVM toolchain.
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.1.2+kotori
+
+llvm-core/clang
+llvm-core/clang-common
+llvm-core/clang-runtime
+llvm-core/clang-toolchain-symlinks
+llvm-core/lld
+llvm-core/lld-toolchain-symlinks
+llvm-core/llvm
+llvm-core/llvm-common
+llvm-core/llvm-toolchain-symlinks
+llvm-runtimes/compiler-rt
+llvm-runtimes/compiler-rt-sanitizers
+llvm-runtimes/libcxx
+llvm-runtimes/libcxxabi
+llvm-runtimes/openmp
+llvm-runtimes/libunwind

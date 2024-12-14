@@ -1,0 +1,119 @@
+# File Name: zsh_aliases
+# File Path: /etc/zsh/zsh_aliases
+# Description: System-wide zsh alias configuration file.
+
+# Copyright (c) 2024 Aryan
+# SPDX-Licence-Identifier: BSD-3-Clause
+
+# Version: 1.0.0
+
+# Replace coreutils with uutils.
+alias \
+    \[="uu-\[" \
+    arch="uu-arch" \
+    base32="uu-base32" \
+    base64="uu-base64" \
+    basename="uu-basename" \
+    basenc="uu-basenc" \
+    cat="uu-cat" \
+    chgrp="uu-chgrp" \
+    chmod="uu-chmod" \
+    chown="uu-chown" \
+    chroot="uu-chroot" \
+    cksum="uu-cksum" \
+    comm="uu-comm" \
+    cp="uu-cp -iv" \
+    csplit="uu-csplit" \
+    cut="uu-cut" \
+    date="uu-date" \
+    dd="uu-dd" \
+    df="uu-df" \
+    dir="uu-dir" \
+    dircolors="uu-dircolors" \
+    dirname="uu-dirname" \
+    du="uu-du" \
+    echo="uu-echo" \
+    env="uu-env" \
+    expand="uu-expand" \
+    expr="uu-expr" \
+    factor="uu-factor" \
+    false="uu-false" \
+    fmt="uu-fmt" \
+    fold="uu-fold" \
+    groups="uu-groups" \
+    hashsum="uu-hashsum" \
+    head="uu-head" \
+    hostid="uu-hostid" \
+    hostname="uu-hostname" \
+    id="uu-id" \
+    install="uu-install" \
+    join="uu-join" \
+    kill="uu-kill" \
+    link="uu-link" \
+    ln="uu-ln" \
+    logname="uu-logname" \
+    ls="uu-ls --color=always"\
+    mkdir="uu-mkdir -vp" \
+    mkfifo="uu-mkfifo" \
+    mknod="uu-mknod" \
+    mktemp="uu-mktemp" \
+    more="uu-more" \
+    mv="uu-mv -iv" \
+    nice="uu-nice" \
+    nl="uu-nl" \
+    nohup="uu-nohup" \
+    nproc="uu-nproc" \
+    numfmt="uu-numfmt" \
+    od="uu-od" \
+    paste="uu-paste" \
+    pathchk="uu-pathchk" \
+    pr="uu-pr" \
+    printenv="uu-printenv" \
+    printf="uu-printf" \
+    ptx="uu-ptx" \
+    pwd="uu-pwd" \
+    readlink="uu-readlink" \
+    realpath="uu-realpath" \
+    rm="uu-rm -iv" \
+    rmdir="uu-rmdir -v" \
+    seq="uu-seq" \
+    shred="uu-shred" \
+    shuf="uu-shuf" \
+    sleep="uu-sleep" \
+    sort="uu-sort" \
+    split="uu-split" \
+    stat="uu-stat" \
+    stdbuf="uu-stdbuf" \
+    sum="uu-sum" \
+    sync="uu-sync" \
+    tac="uu-tac" \
+    tail="uu-tail" \
+    tee="uu-tee" \
+    test="uu-test" \
+    timeout="uu-timeout" \
+    touch="uu-touch" \
+    tr="uu-tr" \
+    true="uu-true" \
+    truncate="uu-truncate" \
+    tsort="uu-tsort" \
+    tty="uu-tty" \
+    uname="uu-uname" \
+    unexpand="uu-unexpand" \
+    uniq="uu-uniq" \
+    unlink="uu-unlink" \
+    vdir="uu-vdir" \
+    wc="uu-wc" \
+    whoami="uu-whoami" \
+    yes="uu-yes" \
+    uutifind="ls-find" \
+    uutixargs="ls-xargs"
+
+# Miscellaneous options.
+alias \
+    irssi="irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi"\
+    notes="nvim -c 'e ~/docs/notes/index.adoc'"\
+    poweroff="loginctl poweroff"\
+    reboot="loginctl reboot"\
+    tree="tree -C"\
+    vim="nvim"\
+    z="zathura"

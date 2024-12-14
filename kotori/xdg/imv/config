@@ -1,0 +1,16 @@
+# File Name: config
+# File Path: ${XDG_CONFIG_HOME}/imv/config
+# Description: System-wide imv configuration file.
+
+# Copyright (c) 2023 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.0
+
+[options]
+overlay = true
+overlay_text = $(basename "$imv_current_file")
+
+[binds]
+p = prev
+n = next

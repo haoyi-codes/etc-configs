@@ -1,0 +1,21 @@
+# File Name: deny.mask
+# File Path: /etc/portage/package.mask/deny.mask
+# Description: Exclude the compilation of certain packages.
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.0+kotori
+
+app-admin/sudo
+
+app-editors/nano
+
+sys-boot/gnu-efi
+
+sys-devel/binutils
+sys-devel/binutils-libs
+
+sys-devel/gcc
+
+net-libs/nodejs::gentoo

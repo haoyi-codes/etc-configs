@@ -1,0 +1,139 @@
+# File Name: enable.use
+# File Path: /etc/portage/package.use/enable.use
+# Description: Enable certain USE flags per package to enable features at compile time.
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.14.2+kotori
+
+app-admin/keepassxc                             autotype yubikey
+
+app-alternatives/sh                             dash
+
+app-crypt/gcr                                   gtk
+app-crypt/qca                                   qt6
+
+app-emulation/qemu                              opengl spice usb usbredir virgl
+app-emulation/virt-manager                      gui
+
+app-text/ghostscript-gpl                        cups
+app-text/poppler cairo
+app-text/texlive                                extra graphics science xetex
+app-text/texlive-core                           xetex
+app-text/xmlto                                  text
+
+dev-lang/rust                                   profiler rustfmt
+dev-lang/rust-bin                               profiler rustfmt
+
+dev-libs/OpenNI2                                opengl
+dev-libs/boost                                  context
+dev-libs/boost                                  python
+llvm-core/libclc                                spirv
+dev-libs/libpcre2                               pcre32
+dev-libs/libxml2                                icu
+dev-libs/qtkeychain                             keyring qt6
+dev-libs/xerces-c                               icu
+dev-libs/xmlsec                                 nss
+
+dev-python/pillow                               webp
+dev-python/pyside2                              svg positioning quick qml xml
+dev-python/pyside6                              designer svg qml webchannel
+dev-python/pyqt5                                declarative gui network widgets
+dev-python/QtPy                                 pyside2
+
+dev-qt/kdsingleapplication                      qt6
+dev-qt/qt5compat                                icu qml
+dev-qt/qtbase                                   icu libproxy opengl
+dev-qt/qtcore                                   icu
+dev-qt/qtdeclarative                            opengl
+dev-qt/qtgui                                    egl eglfs jpeg
+dev-qt/qtmultimedia                             gstreamer opengl qml widgets
+dev-qt/qtquick3d                                opengl
+dev-qt/qtquickcontrols2                         widgets
+dev-qt/qttools                                  designer opengl qml
+
+gui-apps/swaybg                                 gdk-pixbuf
+gui-apps/waybar                                 experimental
+
+gui-libs/wlroots                                liftoff x11-backend
+
+kde-frameworks/kconfig                          qml
+kde-frameworks/kcoreaddons                      icu
+kde-frameworks/kio                              libproxy
+
+media-fonts/noto                                cjk
+
+media-gfx/blender                               openvdb
+media-gfx/imagemagick                           jpeg svg tiff webp xml
+media-gfx/imv                                   gif jpeg png svg
+media-gfx/qrencode                              png
+media-gfx/zbar                                  v4l
+
+media-libs/freeimage                            webp
+media-libs/freetype                             brotli harbuzz
+media-libs/gegl                                 cairo
+media-libs/gst-plugins-bad                      opengl
+media-libs/gst-plugins-base                     opengl
+media-libs/harfbuzz                             icu
+media-libs/libsdl2                              gles2 haptic
+media-libs/libv4l                               utils
+media-libs/libvpx                               postproc
+media-libs/mesa                                 opencl
+media-libs/portaudio                            alsa
+media-libs/rubberband                           ladspa
+
+media-plugins/gst-plugins-meta                  ogg opus vpx
+
+media-sound/audacity                            alsa ffmpeg opus
+
+media-video/ffmpeg                              libass mp3 openssl opus svt-av1 theora vorbis vpx webp xvid x264 x265
+media-video/mpv                                 libmpv sixel
+media-video/obs-studio                          v4l
+media-video/pipewire                            sound-server
+
+net-dns/dnsmasq                                 script
+net-dns/getdns                                  stubby
+net-dns/unbound                                 threads
+
+net-firewall/iptables                           nftables
+
+net-im/nheko                                    voip
+net-im/profanity                                omemo
+
+net-libs/gnutls                                 pkcs11 tools
+net-libs/nodejs                                 inspector
+
+net-misc/openssh                                security-key
+net-misc/spice-gtk                              usbredir
+
+net-p2p/qbittorrent                             webui
+
+sci-libs/cgnslib                                hdf5
+sci-libs/med                                    python
+sci-libs/opencascade                            json vtk
+sci-libs/vtk                                    qt6 boost python
+
+sci-mathematics/octave                          gui opengl curl
+
+sys-apps/kexec-tools                            lzma
+sys-apps/xdg-desktop-portal                     screencast
+
+sys-auth/polkit-qt                              qt6
+
+sys-firmware/intel-microcode                    vanilla
+
+sys-kernel/linux-firmware                       savedconfig
+
+sys-libs/libcap                                 static-libs
+sys-libs/zlib minizip
+
+virtual/imagemagick-tools                       jpeg tiff
+virtual/rust                                    profiler rustfmt
+
+www-client/chromium                             proprietary-codecs
+
+x11-libs/gdk-pixbuf                             jpeg
+x11-libs/libdrm                                 video_cards_radeon
+x11-libs/qscintilla                             qt6
+x11-libs/wxGTK                                  gstreamer libnotify opengl sdl tiff

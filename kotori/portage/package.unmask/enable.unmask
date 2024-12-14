@@ -1,0 +1,10 @@
+# File Name: enable.unmask
+# File Path: /etc/portage/package.unmask/enable.unmask
+# Description: Unmask certain masked packages to compile.
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.0+kotori
+
+www-client/chromium:0/stable::haoyi

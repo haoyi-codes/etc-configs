@@ -1,0 +1,16 @@
+# File Name: package.license
+# File Path: /etc/portage/package.license/package.license
+# Description: Allow installation of packages with a specific license.
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.0+kotori
+
+app-arch/unrar                                  unRAR
+
+dev-util/android-studio                         android
+
+sys-firmware/intel-microcode                    intel-ucode
+
+sys-kernel/linux-firmware                       @BINARY-REDISTRIBUTABLE

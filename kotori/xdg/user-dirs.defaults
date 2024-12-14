@@ -1,0 +1,15 @@
+# File Name: user-dirs.defaults
+# File Path: /etc/xdg/user-dir.defaults
+# Description: XDG default user directory configuration file.
+
+# Copyright (c) 2024 Aryan
+# SPDX-Licence-Identifier: BSD-3-Clause
+
+# Version: 1.0.0
+
+DESKTOP=
+DOWNLOAD=downloads
+DOCUMENTS=docs/
+MUSIC=media/music/
+PICTURES=media/images/
+VIDEOS=media/videos/
