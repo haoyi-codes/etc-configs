@@ -2,10 +2,10 @@
 " File Path: ${XDG_CONFIG_HOME}/nvim/colors/aurora.vim
 " Description: neovim aurora colorscheme.
 
-" Copyright (c) 2024 ray-x, Ray Adams
+" Copyright (c) 2024 ray-x, Aryan
 " SPDX-License-Identifier: MIT AND BSD-3-Clause
 
-" Version: 1.0.0
+" Version: 1.0.1
 
 hi clear
 if exists("syntax_on")
