@@ -1,11 +1,11 @@
 -- File Name: visualizer.lua
--- File Path: /etc/xdg/mpv/scripts/visualizer.lua
+-- File Path: /etc/mpv/scripts/visualizer.lua
 -- Description: Mpv audio visualization script.
 
--- Copyright (c) 2024, mfcc64, Aryan
+-- Copyright (c) 2024 mfcc64, Aryan
 -- SPDX-Licence-Identifier: BSD-3-Clause
 
--- Version: 1.0.0
+-- Version: 1.0.1
 
 -- various audio visualization
 

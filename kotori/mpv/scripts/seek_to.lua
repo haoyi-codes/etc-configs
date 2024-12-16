@@ -1,11 +1,11 @@
 -- File Name: seek_to.lua
--- File Path: /etc/xdg/mpv/scripts/seek_to_lua.lua
+-- File Path: /etc/mpv/scripts/seek_to_lua.lua
 -- Description: Video seeking script for mpv.
 
--- Copyright (c) 2024, occivink, Aryan
+-- Copyright (c) 2024 occivink, Aryan
 -- SPDX-Licence-Identifier: BSD-3-Clause
 
--- Version: 1.0.0
+-- Version: 1.0.1
 
 local assdraw = require 'mp.assdraw'
 local active = false

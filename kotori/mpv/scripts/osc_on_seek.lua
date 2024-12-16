@@ -1,8 +1,8 @@
 -- File Name: visualizer.lua
--- File Path: /etc/xdg/mpv/scripts/visualizer.lua
+-- File Path: /etc/mpv/scripts/visualizer.lua
 -- Description: Script to make the on screen controller visible while seeking.
 
--- Copyright (c) 2024, Aryan
+-- Copyright (c) 2024 Aryan
 -- SPDX-Licence-Identifier: BSD-3-Clause
 
 -- Version: 2.0.0
