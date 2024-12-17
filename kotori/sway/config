@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.0.0
+# Version: 1.1.0
 
 # Monitors
 
@@ -168,8 +168,8 @@ bindsym $mod+shift+w exec "chromium --incognito"
 bindsym $mod_alt+shift+w exec "chromium"
 
 ### Screenshot
-bindsym $mod+s exec "shot -d"
-bindsym $mod+c exec "shot -c"
+bindsym $mod+s exec "shot -f"
+bindsym $mod+shift+s exec "shot -c"
 
 ### Swaylock
 bindsym $mod+shift+x exec "swaylock --ignore-empty-password --show-failed-attempts \
