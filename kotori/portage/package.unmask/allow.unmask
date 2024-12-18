@@ -1,5 +1,5 @@
-# File Name: enable.unmask
-# File Path: /etc/portage/package.unmask/enable.unmask
+# File Name: allow.unmask
+# File Path: /etc/portage/package.unmask/allow.unmask
 # Description: Unmask certain masked packages to compile.
 
 # Copyright (c) 2024 Aryan
