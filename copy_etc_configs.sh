@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.1.0
+# Version: 1.2.0
 
 # Singular files
 cp "/etc/dracut.conf" "./kotori/"
@@ -121,6 +121,8 @@ mkdir -p "./kotori/xdg/nvim/ftplugin/"
 cp "/etc/xdg/nvim/ftplugin/html.lua" "./kotori/xdg/nvim/ftplugin/"
 cp "/etc/xdg/nvim/ftplugin/tex.lua" "./kotori/xdg/nvim/ftplugin/"
 cp "/etc/xdg/nvim/ftplugin/text.lua" "./kotori/xdg/nvim/ftplugin/"
+mkdir -p "./kotori/xdg/nvim/plugin/"
+cp "/etc/xdg/nvim/plugin/vviki.vim" "./kotori/xdg/nvim/plugin/"
 
 # ZSH
 mkdir -p "./kotori/zsh/"
