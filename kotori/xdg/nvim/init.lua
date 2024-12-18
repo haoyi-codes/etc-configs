@@ -5,7 +5,7 @@
 -- Copyright (c) 2024 Aryan
 -- SPDX-License-Identifier: BSD-3-Clause
 
--- Version: 1.0.0
+-- Version: 1.1.0
 
 -- Basic Settings
 vim.wo.number = true
@@ -38,3 +38,8 @@ vim.cmd('hi! Normal ctermbg=none guibg=none')
 vim.cmd('hi! EndOfBuffer ctermbg=none guibg=none')
 vim.cmd('hi! LineNr ctermbg=none guifg=#ffcccb guibg=none')
 vim.cmd('hi! NormalNC ctermbg=none guibg=none')
+
+---- VViki setup
+vim.g.vviki_root = '~/docs/notes'
+vim.g.vviki_ext = '.adoc'
+vim.api.nvim_set_keymap('n', '<leader>ww', ':e ~/docs/notes/index.adoc<CR>', { noremap = true, silent = true})
