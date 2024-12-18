@@ -10,4 +10,10 @@ This repository holds my system configuration files for each production system.
 
 == System
 
-* https://src.reticentadmin.com/aryan/etc-configs/src/branch/main/kotori[kotori]
+* https://src.reticentadmin.com/aryan/etc-configs/src/branch/main/kotori/[kotori]
+
+=== Licenses
+
+This repository includes third-party projects. Their respective licenses can be
+found in the
+https://src.reticentadmin.com/aryan/etc-configs/src/branch/main/licenses/[licenses] directory.
