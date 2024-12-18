@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.0.0
+# Version: 1.1.0
 
 # Singular files
 cp "/etc/dracut.conf" "./kotori/"
@@ -90,6 +90,7 @@ cp "/etc/portage/sets/llvm-tc" "./kotori/portage/sets/"
 # SSH
 mkdir -p "./kotori/ssh/"
 touch "./kotori/ssh/sshd_config"
+echo "You have to copy over the sshd_config file manually."
 
 # Stubby
 mkdir -p "./kotori/stubby/"
