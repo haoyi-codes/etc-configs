@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.0.0+delta
+# Version: 1.0.1+delta
 
 # Load environment settings from profile.env, which is created by
 # env-update from the files in /etc/env.d
@@ -41,7 +41,7 @@ case "$(id -un)" in
             # manager and menu pick up our home directory paths.
             export PATH="${PATH}:${HOME}/.local/bin/:${XDG_DATA_HOME}/cargo/bin/:${XDG_DATA_HOME}/flatpak/bin/"
 
-            dbus-run-session sway
+            startx
 
             # Kill the ssh agent.
             kill -15 "$(pidof ssh-agent)"
