@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.0.0+kotori
+# Version: 2.0.1+kotori
 
 # Change default configuration path for user overrides.
 export ZDOTDIR="$HOME/.config/zsh"
@@ -25,9 +25,6 @@ export BROWSER="chromium"
 # Wayland configuration.
 export QT_QTA_PLATFORM=wayland
 export WLR_DRM_DEVICES="/dev/dri/card0"
-
-# Xorg configuration.
-export XINITRC="${XDG_CONFIG_HOME}/X11/xinitrc"
 
 # Rust configuration.
 export CARGO_HOME="${XDG_DATA_HOME}/cargo"
