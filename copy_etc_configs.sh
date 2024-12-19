@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.2.4
+# Version: 2.2.5
 
 # Colors
 green='\033[0;32m'
@@ -227,6 +227,10 @@ if [ ${system} = "kotori" ]; then
     mkdir -p "./${system}/libvirt/"
     rsync -ahuq "${system}:/etc/libvirt/libvirtd.conf" "./${system}/libvirt/" || { echo "${red}Error copying over libvirtd.conf for libvirt.${nc}"; exit 1; }
 
+    # OpenRC configuration files
+    mkdir -p "./${system}/conf.d/"
+    rsync -ahuq "${system}:/etc/conf.d/syncthing" || { echo "${red}Error copying over syncthing OpenRC configuration file.${nc}"; exit 1; }
+
     # Portage
 
     ## Environment files
@@ -244,10 +248,6 @@ elif [ ${system} = "delta" ]; then
     # Explicitly loaded modules
     mkdir -p "./${system}/modules-load.d/"
     rsync -ahuq "${system}:/etc/modules-load.d/nvidia.conf" "./${system}/modules-load.d/" || { echo "${red}Error copying over nvidia.conf for modules-load.d.${nc}"; exit 1; }
-
-    # OpenRC configuration files
-    mkdir -p "./${system}/conf.d/"
-    rsync -ahuq "${system}:/etc/conf.d/syncthing" || { echo "${red}Error copying over syncthing OpenRC configuration file.${nc}"; exit 1; }
 
     # Portage
     mkdir -p "./${system}/portage/package.use/"
