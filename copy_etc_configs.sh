@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.2.5
+# Version: 2.3.5
 
 # Colors
 green='\033[0;32m'
@@ -244,10 +244,15 @@ if [ ${system} = "kotori" ]; then
     # Sway
     mkdir -p "./${system}/sway/"
     rsync -ahuq "${system}:/etc/sway/config" "./${system}/sway/" || { echo "${red}Error copying over Sway's configuration file.${nc}"; exit 1; }
+
 elif [ ${system} = "delta" ]; then
     # Explicitly loaded modules
     mkdir -p "./${system}/modules-load.d/"
     rsync -ahuq "${system}:/etc/modules-load.d/nvidia.conf" "./${system}/modules-load.d/" || { echo "${red}Error copying over nvidia.conf for modules-load.d.${nc}"; exit 1; }
+
+    # I3
+    mkdir -p "./${system}/i3/"
+    rsync -ahuq "${system}:/etc/i3/config" "./${system}/i3/" || { echo "${red}Error copying over i3 config.${nc}"; exit 1; }
 
     # Portage
     mkdir -p "./${system}/portage/package.use/"
