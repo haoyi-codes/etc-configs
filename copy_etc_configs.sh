@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.1.1
+# Version: 2.1.2
 
 # Colors
 green='\033[0;32m'
@@ -91,7 +91,6 @@ mkdir -p "./${system}/conf.d/"
 rsync -ahuq "${system}:/etc/conf.d/hostname" \
     "${system}:/etc/conf.d/keymaps" \
     "${system}:/etc/conf.d/net" \
-    "${system}:/etc/conf.d/syncthing" \
     "./${system}/conf.d/" || { echo "${red}Error copying over OpenRC configuration files.${nc}"; exit 1; }
 
 # PAM
