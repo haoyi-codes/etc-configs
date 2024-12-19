@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.0.0
+# Version: 2.1.0
 
 # Colors
 green='\033[0;32m'
@@ -213,6 +213,8 @@ rsync -ahuq "${system}:/etc/zsh/zprofile" \
     "${system}:/etc/zsh/zshrc" \
     "./${system}/zsh/" || { echo "${red}Error copying over ZSH configuration files.${nc}"; exit 1; }
 
+echo "${green}Copying over system specific configuration files...${nc}"
+
 # System specifc configuration files.
 if [ ${system} = "kotori" ]; then
     # Dracut
@@ -249,3 +251,5 @@ elif [ ${system} = "delta" ]; then
         "${system}:/etc/X11/xorg.conf.d/20-nvidia.conf" \
         "./${system}/X11/xorg.conf.d/"  || { echo "${red}Error copying over xorg.conf.d configuration files.${nc}"; exit 1; }
 fi
+
+echo "${green}All configuration files copied! Exiting...${nc}"
