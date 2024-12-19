@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.1.4
+# Version: 2.2.4
 
 # Colors
 green='\033[0;32m'
@@ -116,36 +116,44 @@ mkdir -p "./${system}/X11/xinit/"
 rsync -ahuq "${system}:/etc/X11/xinit/xinitrc" "./${system}/X11/xinit/" || { echo "${red}Error copying over xinit configuration file.${nc}"; exit 1; }
 
 # Portage
+
+## Compilation
 mkdir -p "./${system}/portage/"
 rsync -ahuq "${system}:/etc/portage/make.conf" "./${system}/portage/" || { echo "${red}Error copying over make.conf for portage.${nc}"; exit 1; }
 
+## Environment files
 mkdir -p "./${system}/portage/env/"
 rsync -ahuq "${system}:/etc/portage/env/no_hardening.conf" \
     "${system}:/etc/portage/env/no_lto.conf" \
     "${system}:/etc/portage/env/no_tmpfs.conf" \
     "./${system}/portage/env/" || { echo "${red}Error copying env files for portage.${nc}"; exit 1; }
-
 mkdir -p "./${system}/portage/package.env/"
 rsync -ahuq "${system}:/etc/portage/package.env/package.env" "./${system}/portage/package.env/" || { echo "${red}Error copying over package.env files for portage.${nc}"; exit 1; }
 
+## License configuration files
 mkdir -p "./${system}/portage/package.license/"
 rsync -ahuq "${system}:/etc/portage/package.license/package.license" "./${system}/portage/package.license/" || { echo "${red}Error copying over package.license for portage.${nc}"; exit 1; }
 
+## Mask configuration files
 mkdir -p "./${system}/portage/package.mask/"
 rsync -ahuq "${system}:/etc/portage/package.mask/deny.mask" "./${system}/portage/package.mask/" || { echo "${red}Error copying over package.mask files for portage.${nc}"; exit 1; }
 
+## Unmask configuration files
 mkdir -p "./${system}/portage/package.unmask/"
 rsync -ahuq "${system}:/etc/portage/package.unmask/allow.unmask" "./${system}/portage/package.unmask/" || { echo "${red}Error copying over package.unmask files for portage.${nc}"; exit 1; }
 
+## USE configuration files
 mkdir -p "./${system}/portage/package.use/"
 rsync -ahuq "${system}:/etc/portage/package.use/disable.use" \
     "${system}:/etc/portage/package.use/enable.use" \
     "${system}:/etc/portage/package.use/x.use" \
     "./${system}/portage/package.use/" || { echo "${red}Error copying over package.use files for portage.${nc}"; exit 1; }
 
+## Repository information
 mkdir -p "./${system}/portage/repos.conf/"
 rsync -ahuq "${system}:/etc/portage/repos.conf/repos.conf" "./${system}/portage/repos.conf/" || { echo "${red}Error copying over repos.conf for portage.${nc}"; exit 1; }
 
+## Saved configs
 mkdir -p "./${system}/portage/savedconfig/sys-kernel/"
 rsync -ahuq "${system}:/etc/portage/savedconfig/sys-kernel/linux-firmware" "./${system}/portage/savedconfig/sys-kernel/" || { echo "${red}Error copying over linux-firmware config for portage.${nc}"; exit 1; }
 
@@ -221,11 +229,11 @@ if [ ${system} = "kotori" ]; then
 
     # Portage
 
-    ## env
+    ## Environment files
     mkdir -p "./${system}/portage/env/"
     rsync -ahuq "${system}:/etc/portage/env/no_trapv.conf" "./${system}/portage/env/" || { echo "${red}Error copying over no_trapv.conf env file for portage.${nc}"; exit 1; }
 
-    ## sets
+    ## Sets
     mkdir -p "./${system}/portage/sets/"
     rsync -ahuq "${system}:/etc/portage/sets/llvm-tc" "./${system}/portage/sets/" || { echo "${red}Error copying over portage sets.${nc}"; exit 1; }
 
