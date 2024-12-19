@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.1.0
+# Version: 2.1.1
 
 # Colors
 green='\033[0;32m'
@@ -57,7 +57,7 @@ else
     exit 1
 fi
 
-echo "${green}Copying over configuration files...${nc}"
+echo "Copying over configuration files..."
 
 # Chrony
 mkdir -p "./${system}/chrony/"
@@ -213,7 +213,7 @@ rsync -ahuq "${system}:/etc/zsh/zprofile" \
     "${system}:/etc/zsh/zshrc" \
     "./${system}/zsh/" || { echo "${red}Error copying over ZSH configuration files.${nc}"; exit 1; }
 
-echo "${green}Copying over system specific configuration files...${nc}"
+echo "Copying over system specific configuration files..."
 
 # System specifc configuration files.
 if [ ${system} = "kotori" ]; then
