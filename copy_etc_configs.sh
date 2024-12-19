@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.1.3
+# Version: 2.1.4
 
 # Colors
 green='\033[0;32m'
@@ -40,7 +40,7 @@ ping -c 1 -W 1 "${system}" > /dev/null 2>&1 && echo "${green}Success!${nc}" || {
 
 # Check if we can access system via SSH.
 echo "Checking if we can obtain ${system}'s via SSH..."
-mkdir "./${system}/"
+mkdir -p "./${system}/"
 rsync -ahuq "${system}:/etc/hostname" "./${system}/" && echo "${green}Success!${nc}" || { echo "${red}Cannot connect to ${system} via SSH.${nc}"; exit 1; }
 
 # Check if /etc/hostname has the same value as ${system}.
@@ -149,9 +149,6 @@ rsync -ahuq "${system}:/etc/portage/repos.conf/repos.conf" "./${system}/portage/
 mkdir -p "./${system}/portage/savedconfig/sys-kernel/"
 rsync -ahuq "${system}:/etc/portage/savedconfig/sys-kernel/linux-firmware" "./${system}/portage/savedconfig/sys-kernel/" || { echo "${red}Error copying over linux-firmware config for portage.${nc}"; exit 1; }
 
-mkdir -p "./${system}/portage/sets/"
-rsync -ahuq "${system}:/etc/portage/sets/llvm-tc" "./${system}/portage/sets/" || { echo "${red}Error copying over portage sets.${nc}"; exit 1; }
-
 # SSH
 mkdir -p "./${system}/ssh/"
 touch "./${system}/ssh/sshd_config"
@@ -223,8 +220,14 @@ if [ ${system} = "kotori" ]; then
     rsync -ahuq "${system}:/etc/libvirt/libvirtd.conf" "./${system}/libvirt/" || { echo "${red}Error copying over libvirtd.conf for libvirt.${nc}"; exit 1; }
 
     # Portage
+
+    ## env
     mkdir -p "./${system}/portage/env/"
     rsync -ahuq "${system}:/etc/portage/env/no_trapv.conf" "./${system}/portage/env/" || { echo "${red}Error copying over no_trapv.conf env file for portage.${nc}"; exit 1; }
+
+    ## sets
+    mkdir -p "./${system}/portage/sets/"
+    rsync -ahuq "${system}:/etc/portage/sets/llvm-tc" "./${system}/portage/sets/" || { echo "${red}Error copying over portage sets.${nc}"; exit 1; }
 
     # Sway
     mkdir -p "./${system}/sway/"
