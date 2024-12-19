@@ -1,0 +1,19 @@
+# File Name: package.license
+# File Path: /etc/portage/package.license/package.license
+# Description: Allow installation of packages with third party license(s).
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.0+delta
+
+app-arch/unrar                            unRAR
+
+dev-util/android-studio                   android
+dev-util/nvidia-cuda-toolkit              NVIDIA-CUDA
+
+games-util/steam-launcher                 ValveSteamLicense
+
+sys-kernel/linux-firmware                 linux-fw-redistributable
+
+x11-drivers/nvidia-drivers                NVIDIA-r2

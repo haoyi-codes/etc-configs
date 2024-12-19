@@ -1,0 +1,39 @@
+# File Name: disable.use
+# File Path: /etc/portage/package.use/disable.use
+# Description: Disable certain USE flags per package to disable features at compile time.
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.9+delta
+
+app-admin/keepassxc                             -network
+
+app-alternatives/sh                             -bash
+
+app-text/zathura-pdf-mupdf                      -javascript
+
+dev-python/numpy                                -lapack
+
+media-sound/mpg123                              -pulseaudio
+media-sound/pulseaudio                          -daemon
+
+media-video/mpv                                 -pulseaudio
+
+net-im/dino                                     -gpg
+
+net-libs/nodejs                                 -npm
+
+net-p2p/qbittorrent                             -dbus -gui
+
+net-voip/mumble                                 -pulseaudio
+
+net-vpn/i2pd                                    -upnp
+
+www-client/chromium                             -hangouts -widevine
+www-client/chromium                             -l10n_af -l10n_am -l10n_ar -l10n_bg -l10n_bn -l10n_ca -l10n_cs -l10n_da -l10n_de -l10n_el
+www-client/chromium                             -l10n_en-GB -l10n_es -l10n_es-419 -l10n_et -l10n_fa -l10n_fi -l10n_fil -l10n_fr -l10n_gu
+www-client/chromium                             -l10n_he -l10n_hi -l10n_hr -l10n_hu -l10n_id -l10n_it -l10n_ja -l10n_kn -l10n_ko -l10n_lt
+www-client/chromium                             -l10n_lv -l10n_ml -l10n_mr -l10n_ms -l10n_nb -l10n_nl -l10n_pl -l10n_pt-BR -l10n_pt-PT
+www-client/chromium                             -l10n_ro -l10n_ru -l10n_sk -l10n_sl -l10n_sr -l10n_sv -l10n_sw -l10n_ta -l10n_te -l10n_th
+www-client/chromium                             -l10n_tr -l10n_uk -l10n_ur -l10n_vi -l10n_zh-CN -l10n_zh-TW

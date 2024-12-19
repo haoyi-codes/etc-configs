@@ -1,0 +1,52 @@
+# File Name: zprofile
+# File Path: /etc/zsh/zprofile
+# Description: System-wide zsh profile configuration file.
+
+# Copyright (c) 2024 Aryan
+# SPDX-Licence-Identifier: BSD-3-Clause
+
+# Version: 1.0.0+delta
+
+# Load environment settings from profile.env, which is created by
+# env-update from the files in /etc/env.d
+if [[ -e /etc/profile.env ]] ; then
+	. /etc/profile.env
+fi
+
+# Make only owner have permissions for created files/directories by defualt.
+umask 077
+
+# Unset any directories that only root should have in its path.
+unset ROOTPATH
+
+# Shell options.
+shopts=$-
+setopt nullglob
+for sh in /etc/profile.d/*.sh ; do
+	[[ -r "${sh}" ]] && . "${sh}"
+done
+unsetopt nullglob
+set -$shopts
+unset sh shopts
+
+# Check if user is a graphical user and if they are in tty spawn a gui
+# environment.
+case "$(id -un)" in
+    [ax][0-9][0-9]*)
+        if [[ -z ${DISPLAY} ]] && [[ "$(tty)" == "/dev/tty"* ]]; then
+            # Start the ssh agent.
+            eval "$(ssh-agent -s)"
+            
+            # We set the ${PATH} here instead of /etc/zsh/zshenv so that our window
+            # manager and menu pick up our home directory paths.
+            export PATH="${PATH}:${HOME}/.local/bin/:${XDG_DATA_HOME}/cargo/bin/:${XDG_DATA_HOME}/flatpak/bin/"
+
+            dbus-run-session sway
+
+            # Kill the ssh agent.
+            kill -15 "$(pidof ssh-agent)"
+
+            logout
+        fi
+    ;;
+esac

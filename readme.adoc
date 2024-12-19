@@ -10,6 +10,7 @@ This repository holds my system configuration files for each production system.
 
 == System
 
+* https://src.reticentadmin.com/aryan/etc-configs/src/branch/main/delta/[delta]
 * https://src.reticentadmin.com/aryan/etc-configs/src/branch/main/kotori/[kotori]
 
 === Licenses

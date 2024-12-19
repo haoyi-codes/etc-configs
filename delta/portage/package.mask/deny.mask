@@ -1,0 +1,16 @@
+# File Name: deny.mask
+# File Path: /etc/portage/package.mask/deny.mask
+# Description: Exclude the compilation of certain packages.
+
+# Copyright (c) 2024 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.0+delta
+
+app-admin/sudo
+
+app-editors/nano
+
+www-client/chromium:0/beta
+www-client/chromium:0/dev
+www-client/chromium::gentoo
