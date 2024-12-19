@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.1.2
+# Version: 2.1.3
 
 # Colors
 green='\033[0;32m'
@@ -123,7 +123,6 @@ mkdir -p "./${system}/portage/env/"
 rsync -ahuq "${system}:/etc/portage/env/no_hardening.conf" \
     "${system}:/etc/portage/env/no_lto.conf" \
     "${system}:/etc/portage/env/no_tmpfs.conf" \
-    "${system}:/etc/portage/env/no_trapv.conf" \
     "./${system}/portage/env/" || { echo "${red}Error copying env files for portage.${nc}"; exit 1; }
 
 mkdir -p "./${system}/portage/package.env/"
