@@ -1,11 +1,11 @@
 # File Name: environment
 # File Path: /etc/environment
-# Description: System wide environment variables.
+# Description: System-wide environment variables.
 
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-clause
 
-# Version: 1.0.0+kotori
+# Version: 1.0.1+kotori
 
 CC=clang
 CXX=clang++
