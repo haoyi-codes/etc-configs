@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.3.5
+# Version: 2.3.6
 
 # Colors
 green='\033[0;32m'
@@ -50,7 +50,7 @@ if [ "${hostname}" = "${system}" ]; then
     echo "${green}/etc/hostname file for ${system} says ${system}!${nc}"
 else
     echo "${red}/etc/hostname file on ${system} does not match ${system}.${nc}"
-    echo "${red}This could be because incorrect hosts configuration on your current system.${nc}"
+    echo "${red}This could be because of an incorrect hosts configuration file on your current system.${nc}"
 
     rm -r "./${system}/"
 
