@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.3.6
+# Version: 2.4.6
 
 # Colors
 green='\033[0;32m'
@@ -40,24 +40,24 @@ ping -c 1 -W 1 "${system}" > /dev/null 2>&1 && echo "${green}Success!${nc}" || {
 
 # Check if we can access system via SSH.
 echo "Checking if we can obtain ${system}'s via SSH..."
-mkdir -p "./${system}/"
-rsync -ahuq "${system}:/etc/hostname" "./${system}/" && echo "${green}Success!${nc}" || { echo "${red}Cannot connect to ${system} via SSH.${nc}"; exit 1; }
+hostname=$(ssh ${system} hostname)
+echo "${green}Success!${nc}"
 
-# Check if /etc/hostname has the same value as ${system}.
+# Check if remote's hostname is the same as ${system}.
 echo "Checking if the hostname on ${system} is ${system}."
-hostname=$(cat "./${system}/hostname")
 if [ "${hostname}" = "${system}" ]; then
     echo "${green}/etc/hostname file for ${system} says ${system}!${nc}"
 else
     echo "${red}/etc/hostname file on ${system} does not match ${system}.${nc}"
     echo "${red}This could be because of an incorrect hosts configuration file on your current system.${nc}"
 
-    rm -r "./${system}/"
-
     exit 1
 fi
 
+# Copy configuration files via rsync
+
 echo "Copying over configuration files..."
+mkdir -p "./${system}/"
 
 # Chrony
 mkdir -p "./${system}/chrony/"
@@ -103,6 +103,7 @@ rsync -ahuq "${system}:/etc/pam.d/doas" \
 # Singular configuration files.
 rsync -ahuq "${system}:/etc/environment" \
     "${system}:/etc/environment" \
+    "${system}:/etc/hostname" \
     "${system}:/etc/i3blocks.conf" \
     "${system}:/etc/imv_config" \
     "${system}:/etc/resolv.conf.head" \
