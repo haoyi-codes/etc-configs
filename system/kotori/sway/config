@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.2.0
+# Version: 1.3.0
 
 # Monitors
 
@@ -74,9 +74,9 @@ exec gentoo-pipewire-launcher restart
 
 ## Screen lock
 exec swayidle -w \
-    timeout 1800 "swaylock --ignore-empty-password --show-failed-attempts \
+    timeout 1800 "swaylock --daemonize --ignore-empty-password --show-failed-attempts \
     --image '/usr/local/share/wallpapers/screen_lock.xpm'" \
-    before-sleep "swaylock --ignore-empty-password --show-failed-attempts \
+    before-sleep "swaylock --daemonize --ignore-empty-password --show-failed-attempts \
     --image '/usr/local/share/wallpapers/screen_lock.xpm'"
 
 ## wallpaper
@@ -172,7 +172,7 @@ bindsym $mod+s exec "shot -f"
 bindsym $mod+shift+s exec "shot -c"
 
 ### Swaylock
-bindsym $mod+shift+x exec "swaylock --ignore-empty-password --show-failed-attempts \
+bindsym $mod+shift+x exec "swaylock --daemonize --ignore-empty-password --show-failed-attempts \
 --image '/usr/local/share/wallpapers/screen_lock.xpm'"
-bindsym $mod_alt+shift+x exec "swaylock --ignore-empty-password --show-failed-attempts \
+bindsym $mod_alt+shift+x exec "swaylock --daemonize --ignore-empty-password --show-failed-attempts \
 --color '00000000'"
