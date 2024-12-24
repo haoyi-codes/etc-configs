@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.0.0+delta
+# Version: 1.1.0+delta
 
 app-admin/keepassxc                             autotype yubikey
 
@@ -89,7 +89,7 @@ media-plugins/gst-plugins-meta                  ogg opus vpx
 
 media-sound/audacity                            alsa ffmpeg opus
 
-media-video/ffmpeg                              alsa libass mp3 openssl opus svt-av1 theora vorbis vpx webp xvid x264 x265
+media-video/ffmpeg                              alsa libass mp3 openssl opus svt-av1 theora vorbis vpx v4l webp xvid x264 x265
 media-video/mpv                                 libmpv sixel
 media-video/obs-studio                          v4l
 media-video/pipewire                            sound-server
