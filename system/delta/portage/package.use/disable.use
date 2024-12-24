@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.0.9+delta
+# Version: 1.1.9+delta
 
 app-admin/keepassxc                             -network
 
@@ -15,6 +15,7 @@ app-text/zathura-pdf-mupdf                      -javascript
 
 dev-python/numpy                                -lapack
 
+media-sound/easyeffects                         -doc
 media-sound/mpg123                              -pulseaudio
 media-sound/pulseaudio                          -daemon
 
