@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.0.1+kotori
+# Version: 2.0.2+kotori
 
 # Change default configuration path for user overrides.
 export ZDOTDIR="$HOME/.config/zsh"
@@ -37,7 +37,7 @@ export GNUPGHOME="${XDG_DATA_HOME}/gnupg"
 export GOPATH="${XDG_DATA_HOME}/go"
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 export QT_QPA_PLATFORMTHEME=qt5ct
-export WGETRC="/etc/xdg/wget/wgetrc"
+export WGETRC="/etc/wgetrc"
 export WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default/"
 export GTK_THEME=dracula
 export SSH_ASKPASS_REQUIRE=never

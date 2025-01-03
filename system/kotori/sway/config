@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.3.0
+# Version: 1.4.0
 
 # Monitors
 
@@ -80,7 +80,7 @@ exec swayidle -w \
     --image '/usr/local/share/wallpapers/screen_lock.xpm'"
 
 ## wallpaper
-exec set_wallpaper
+exec set-wallpaper
 
 # Window borders
 default_border pixel
