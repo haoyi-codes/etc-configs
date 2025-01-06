@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.1.0+delta
+# Version: 1.2.0+delta
 
 app-admin/keepassxc                             autotype yubikey
 
@@ -129,6 +129,7 @@ sys-firmware/intel-microcode                    vanilla
 sys-kernel/linux-firmware                       savedconfig
 
 sys-libs/libcap                                 static-libs
+sys-libs/glibc                                  hash-sysv-compat
 sys-libs/zlib minizip
 
 virtual/imagemagick-tools                       jpeg tiff

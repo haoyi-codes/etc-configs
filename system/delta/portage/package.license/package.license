@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.0.0+delta
+# Version: 1.1.0+delta
 
 app-arch/unrar                            unRAR
 
@@ -13,6 +13,8 @@ dev-util/android-studio                   android
 dev-util/nvidia-cuda-toolkit              NVIDIA-CUDA
 
 games-util/steam-launcher                 ValveSteamLicense
+
+net-im/discord                            all-rights-reserved
 
 sys-kernel/linux-firmware                 linux-fw-redistributable
 

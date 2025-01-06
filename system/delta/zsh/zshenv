@@ -32,7 +32,7 @@ export RUSTFLAGS="-C debuginfo=0 -C embed-bitcode=y -C opt-level=3 -C target-cpu
 export GNUPGHOME="${XDG_DATA_HOME}/gnupg"
 export GOPATH="${XDG_DATA_HOME}/go"
 export QT_QPA_PLATFORMTHEME=qt5ct
-export WGETRC="/etc/xdg/wget/wgetrc"
+export WGETRC="/etc/wgetrc"
 export WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default/"
 export GTK_THEME=dracula
 export SSH_ASKPASS_REQUIRE=never
