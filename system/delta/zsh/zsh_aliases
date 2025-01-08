@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.0.0
+# Version: 1.0.1
 
 # Replace coreutils with uutils.
 alias \
@@ -53,7 +53,7 @@ alias \
     ln="uu-ln" \
     logname="uu-logname" \
     ls="uu-ls --color=always"\
-    mkdir="uu-mkdir -vp" \
+    mkdir="uu-mkdir -pv" \
     mkfifo="uu-mkfifo" \
     mknod="uu-mknod" \
     mktemp="uu-mktemp" \
@@ -105,8 +105,8 @@ alias \
     wc="uu-wc" \
     whoami="uu-whoami" \
     yes="uu-yes" \
-    uutifind="ls-find" \
-    uutixargs="ls-xargs"
+    find="uu-find" \
+    xargs="uu-xargs"
 
 # Miscellaneous options.
 alias \

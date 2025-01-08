@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.14.2+kotori
+# Version: 1.15.2+kotori
 
 app-admin/keepassxc                             autotype yubikey
 
@@ -98,7 +98,6 @@ net-dns/unbound                                 threads
 
 net-firewall/iptables                           nftables
 
-net-im/nheko                                    voip
 net-im/profanity                                omemo
 
 net-libs/gnutls                                 pkcs11 tools

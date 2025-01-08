@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.0.0+delta
+# Version: 1.1.0+delta
 
 app-accessibility/at-spi2-core                  abi_x86_32
 
@@ -102,6 +102,8 @@ sys-apps/util-linux                             abi_x86_32
 llvm-core/clang                                 abi_x86_32
 llvm-core/llvm                                  abi_x86_32
 
+sys-libs/readline                               abi_x86_32
+sys-libs/gdbm                                   abi_x86_32
 sys-libs/libcap                                 abi_x86_32
 sys-libs/libselinux                             abi_x86_32
 sys-libs/libsepol                               abi_x86_32
