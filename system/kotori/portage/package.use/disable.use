@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.10.3+kotori
+# Version: 1.11.3+kotori
 
 app-admin/keepassxc                             -network
 
@@ -29,8 +29,6 @@ media-sound/pulseaudio                          -daemon
 net-dns/getdns                                  -unbound
 
 net-im/dino                                     -gpg -rtp
-
-net-libs/nodejs                                 -npm
 
 net-p2p/qbittorrent                             -dbus -gui
 

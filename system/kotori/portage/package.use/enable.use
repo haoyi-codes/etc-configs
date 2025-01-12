@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.15.2+kotori
+# Version: 1.16.3+kotori
 
 app-admin/keepassxc                             autotype yubikey
 
@@ -29,7 +29,6 @@ dev-lang/rust-bin                               profiler rustfmt
 dev-libs/OpenNI2                                opengl
 dev-libs/boost                                  context
 dev-libs/boost                                  python
-llvm-core/libclc                                spirv
 dev-libs/libpcre2                               pcre32
 dev-libs/libxml2                                icu
 dev-libs/qtkeychain                             keyring qt6
@@ -61,6 +60,8 @@ gui-libs/wlroots                                liftoff x11-backend
 kde-frameworks/kconfig                          qml
 kde-frameworks/kcoreaddons                      icu
 kde-frameworks/kio                              libproxy
+
+llvm-core/libclc                                spirv
 
 media-fonts/noto                                cjk
 
@@ -101,7 +102,7 @@ net-firewall/iptables                           nftables
 net-im/profanity                                omemo
 
 net-libs/gnutls                                 pkcs11 tools
-net-libs/nodejs                                 inspector
+net-libs/nodejs                                 inspector npm
 
 net-misc/openssh                                security-key
 net-misc/spice-gtk                              usbredir
