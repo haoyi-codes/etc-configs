@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 3.0.0
+# Version: 3.1.0
 
 # Colors
 green='\033[0;32m'
@@ -110,6 +110,7 @@ rsync -ahuq "${system}:/etc/environment" \
     "${system}:/etc/sysctl.conf" \
     "${system}:/etc/wgetrc" \
     "${system}:/etc/zathurarc" \
+    "${system}:/etc/asound.conf" \
     "../system/${system}" || { echo "${red}Error copying over singular configuration files.${nc}"; exit 1; }
 
 # X11
