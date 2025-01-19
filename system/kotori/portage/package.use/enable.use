@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.16.3+kotori
+# Version: 1.17.3+kotori
 
 app-admin/keepassxc                             autotype yubikey
 
@@ -116,6 +116,7 @@ sci-libs/vtk                                    qt6 boost python
 
 sci-mathematics/octave                          gui opengl curl
 
+sys-apps/bubblewrap                             suid
 sys-apps/kexec-tools                            lzma
 sys-apps/xdg-desktop-portal                     screencast
 
