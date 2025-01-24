@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.3.0+delta
+# Version: 1.4.0+delta
 
 app-admin/keepassxc                             autotype yubikey
 
@@ -118,6 +118,7 @@ sci-libs/vtk                                    qt6 boost python
 
 sci-mathematics/octave                          gui opengl curl
 
+sys-apps/bubblewrap                             suid
 sys-apps/kexec-tools                            lzma
 sys-apps/xdg-desktop-portal                     screencast
 
