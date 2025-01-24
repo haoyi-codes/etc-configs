@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.0.1
+# Version: 1.0.2
 
 # Replace coreutils with uutils.
 alias \
@@ -105,8 +105,8 @@ alias \
     wc="uu-wc" \
     whoami="uu-whoami" \
     yes="uu-yes" \
-    find="uu-find" \
-    xargs="uu-xargs"
+    find="uutils-find" \
+    xargs="uutils-xargs"
 
 # Miscellaneous options.
 alias \
