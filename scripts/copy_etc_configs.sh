@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 3.1.0
+# Version: 3.2.0
 
 # Colors
 green='\033[0;32m'
@@ -231,7 +231,8 @@ if [ ${system} = "kotori" ]; then
 
     # OpenRC configuration files
     mkdir -p "../system/${system}/conf.d/"
-    rsync -ahuq "${system}:/etc/conf.d/syncthing" || { echo "${red}Error copying over syncthing OpenRC configuration file.${nc}"; exit 1; }
+    touch "../system/${system}/conf.d/syncthing"
+    echo "You have to copy over the syncthing configuration file for ${system} manually."
 
     # Portage
 
