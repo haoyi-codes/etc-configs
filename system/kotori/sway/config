@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.4.0
+# Version: 1.5.0
 
 # Monitors
 
@@ -164,8 +164,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+d exec "bemenu-run --fn 'monospace 10' --tb '#ffb6c1' --tf '#000000' --hf '#000000' --fb '#000000' --hb '#000000' --nb '#000000' --sb '#000000' --ab '#000000' --scb '#000000' --bdr '#000000'"
 
 ### Browser
-bindsym $mod+shift+w exec "chromium --incognito"
-bindsym $mod_alt+shift+w exec "chromium"
+bindsym $mod+shift+w exec "chromium --user-data-dir=${HOME}/.config/chromium/browsing --incognito"
+bindsym $mod_alt+shift+w exec "chromium --user-data-dir=${HOME}/.config/chromium/browsing/"
 
 ### Screenshot
 bindsym $mod+s exec "shot -f"
