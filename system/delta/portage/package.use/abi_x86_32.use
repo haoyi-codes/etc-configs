@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.1.0+delta
+# Version: 1.2.0+delta
 
 app-accessibility/at-spi2-core                  abi_x86_32
 
@@ -42,6 +42,7 @@ dev-libs/nettle                                 abi_x86_32
 dev-libs/wayland                                abi_x86_32
 
 dev-util/mingw64-toolchain                      abi_x86_32
+dev-util/spirv-tools                            abi_x86_32
 
 gnome-base/librsvg                              abi_x86_32
 
