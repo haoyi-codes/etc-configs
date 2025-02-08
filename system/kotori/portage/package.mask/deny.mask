@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.0.0+kotori
+# Version: 1.0.1+kotori
 
 app-admin/sudo
 
@@ -15,7 +15,6 @@ sys-boot/gnu-efi
 
 sys-devel/binutils
 sys-devel/binutils-libs
-
 sys-devel/gcc
 
 net-libs/nodejs::gentoo
