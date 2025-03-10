@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-Licence-Identifier: BSD-3-Clause
 
-# Version: 1.1.2+delta
+# Version: 1.2.2+delta
 
 # Monitors
 
@@ -79,6 +79,7 @@ bindsym $mod+shift+q+p exec "doas /sbin/poweroff"
 bindsym $mod+n layout toggle tabbed split
 bindsym $mod+shift+space floating toggle
 bindsym $mod+f fullscreen toggle
+floating_modifier $mod
 
 ## Current workspace keybinds
 bindsym $mod+h focus left
