@@ -5,9 +5,11 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.1.9+delta
+# Version: 1.2.9+delta
 
 app-admin/keepassxc                             -network
+
+app-emulation/qemu                              -pin-upstream-blobs
 
 app-alternatives/sh                             -bash
 

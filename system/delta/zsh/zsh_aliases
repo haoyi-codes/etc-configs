@@ -105,8 +105,8 @@ alias \
     wc="uu-wc" \
     whoami="uu-whoami" \
     yes="uu-yes" \
-    find="uu-find" \
-    xargs="uu-xargs"
+    find="uutils-find" \
+    xargs="uutils-xargs"
 
 # Miscellaneous options.
 alias \
