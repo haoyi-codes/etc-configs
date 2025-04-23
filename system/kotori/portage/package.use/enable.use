@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.17.3+kotori
+# Version: 1.20.4+kotori
 
 app-admin/keepassxc                             autotype yubikey
 
@@ -18,7 +18,7 @@ app-emulation/qemu                              opengl spice usb usbredir virgl
 app-emulation/virt-manager                      gui
 
 app-text/ghostscript-gpl                        cups
-app-text/poppler cairo
+app-text/poppler                                cairo
 app-text/texlive                                extra graphics science xetex
 app-text/texlive-core                           xetex
 app-text/xmlto                                  text
@@ -52,6 +52,8 @@ dev-qt/qtquick3d                                opengl
 dev-qt/qtquickcontrols2                         widgets
 dev-qt/qttools                                  designer opengl qml
 
+dev-util/android-tools                          udev
+
 gui-apps/swaybg                                 gdk-pixbuf
 gui-apps/waybar                                 experimental
 
@@ -71,9 +73,10 @@ media-gfx/imv                                   gif jpeg png svg
 media-gfx/qrencode                              png
 media-gfx/zbar                                  v4l
 
+media-libs/babl                                 introspection lcms
 media-libs/freeimage                            webp
 media-libs/freetype                             brotli harbuzz
-media-libs/gegl                                 cairo
+media-libs/gegl                                 cairo introspection lcms
 media-libs/gst-plugins-bad                      opengl
 media-libs/gst-plugins-base                     opengl
 media-libs/harfbuzz                             icu
@@ -121,6 +124,8 @@ sys-apps/kexec-tools                            lzma
 sys-apps/xdg-desktop-portal                     screencast
 
 sys-auth/polkit-qt                              qt6
+
+sys-devel/gettext                               java
 
 sys-firmware/intel-microcode                    vanilla
 

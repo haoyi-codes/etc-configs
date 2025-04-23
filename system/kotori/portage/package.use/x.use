@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.0.2+kotori
+# Version: 1.1.2+kotori
 
 app-admin/keepassxc                             X
 
@@ -18,6 +18,8 @@ dev-cpp/cairomm                                 X
 dev-cpp/gtkmm                                   X
 
 dev-libs/libspnav                               X
+
+dev-python/pycairo                              X
 
 dev-qt/qtbase                                   X
 
@@ -39,6 +41,8 @@ media-libs/libva                                X
 media-libs/mesa                                 X
 media-libs/vulkan-loader                        X
 
+media-gfx/gimp                                  X
+
 sci-libs/vtk                                    X
 
 sci-mathematics/octave                          X
@@ -48,7 +52,6 @@ sys-apps/flatpak                                X
 
 x11-apps/mesa-progs                             X
 
-x11-libs/cairo                                  X
 x11-libs/gtk+                                   X
 x11-libs/libxkbcommon                           X
 x11-libs/pango                                  X
