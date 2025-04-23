@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version 1.1.0+kotori
+# Version 1.2.0+kotori
 
 Protocol 2
 HostKey /etc/ssh/ssh_host_ed25519_key
@@ -19,4 +19,4 @@ PubkeyAuthentication yes
 PubkeyAcceptedKeyTypes sk-ssh-ed25519@openssh.com,ssh-ed25519
 MACs hmac-sha2-512-etm@openssh.com
 Ciphers chacha20-poly1305@openssh.com
-KexAlgorithms sntrup761x25519-sha512@openssh.com
+KexAlgorithms mlkem768x25519-sha256
