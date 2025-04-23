@@ -5,7 +5,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version 1.0.1+kotori
+# Version: 1.0.2+kotori
 
 # Host single NIC bridge.
 config_enp7s0="null"
