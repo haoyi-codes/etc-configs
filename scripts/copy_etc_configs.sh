@@ -7,7 +7,7 @@
 # Copyright (c) 2024 Aryan
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 3.2.0
+# Version: 3.3.0
 
 # Colors
 green='\033[0;32m'
@@ -238,7 +238,8 @@ if [ ${system} = "kotori" ]; then
 
     ## Environment files
     mkdir -p "../system/${system}/portage/env/"
-    rsync -ahuq "${system}:/etc/portage/env/no_trapv.conf" "../system/${system}/portage/env/" || { echo "${red}Error copying over no_trapv.conf env file for portage.${nc}"; exit 1; }
+    rsync -ahuq "${system}:/etc/portage/env/no_trap.conf" "../system/${system}/portage/env/" || { echo "${red}Error copying over no_trap.conf env file for portage.${nc}"; exit 1; }
+    rsync -ahuq "${system}:/etc/portage/env/no_sanitize.conf" "../system/${system}/portage/env/" || { echo "${red}Error copying over no_sanitize.conf env file for portage.${nc}"; exit 1; }
 
     ## Sets
     mkdir -p "../system/${system}/portage/sets/"
