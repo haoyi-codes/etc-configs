@@ -128,6 +128,8 @@ mkdir -p "../system/${system}/portage/env/"
 rsync -ahuq "${system}:/etc/portage/env/no_hardening.conf" \
     "${system}:/etc/portage/env/no_lto.conf" \
     "${system}:/etc/portage/env/no_tmpfs.conf" \
+    "${system}:/etc/portage/env/no_trap.conf" \
+    "${system}:/etc/portage/env/no_sanitize.conf" \
     "../system/${system}/portage/env/" || { echo "${red}Error copying env files for portage.${nc}"; exit 1; }
 mkdir -p "../system/${system}/portage/package.env/"
 rsync -ahuq "${system}:/etc/portage/package.env/package.env" "../system/${system}/portage/package.env/" || { echo "${red}Error copying over package.env files for portage.${nc}"; exit 1; }
@@ -238,8 +240,6 @@ if [ ${system} = "kotori" ]; then
 
     ## Environment files
     mkdir -p "../system/${system}/portage/env/"
-    rsync -ahuq "${system}:/etc/portage/env/no_trap.conf" "../system/${system}/portage/env/" || { echo "${red}Error copying over no_trap.conf env file for portage.${nc}"; exit 1; }
-    rsync -ahuq "${system}:/etc/portage/env/no_sanitize.conf" "../system/${system}/portage/env/" || { echo "${red}Error copying over no_sanitize.conf env file for portage.${nc}"; exit 1; }
 
     ## Sets
     mkdir -p "../system/${system}/portage/sets/"
